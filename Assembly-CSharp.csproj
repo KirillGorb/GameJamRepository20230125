@@ -60,6 +60,8 @@
     <Compile Include="Assets\Scripts\Player\Move\MoveCamera.cs" />
     <Compile Include="Assets\Scripts\Rooms\CreateRoom.cs" />
     <Compile Include="Assets\Scripts\Rooms\Rooms.cs" />
+    <Compile Include="Assets\Scripts\Rooms\SpawnRooms.cs" />
+    <Compile Include="Assets\Scripts\Rooms\SaveHallway.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
