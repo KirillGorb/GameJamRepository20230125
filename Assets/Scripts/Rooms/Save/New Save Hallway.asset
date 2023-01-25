@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac458d0a013d9cc4ba78b1883eb74ffd, type: 3}
+  m_Name: New Save Hallway
+  m_EditorClassIdentifier: 
+  _typeSpawnDoor: 1
+  _rooms:
+  - RoomPos: {x: -49.25, y: 2.5, z: 11.936946}
+    RoomType: 0
+  - RoomPos: {x: -49.25, y: 2.5, z: 7.3319535}
+    RoomType: 0
+  - RoomPos: {x: 48.699997, y: 2.5, z: -2.3571072}
+    RoomType: 1
+  - RoomPos: {x: 48.7, y: 2.5, z: 9.171911}
+    RoomType: 1
+  - RoomPos: {x: -9.024252, y: 2.5, z: 13.4}
+    RoomType: 2
+  - RoomPos: {x: -19.013407, y: 2.5, z: 13.400001}
+    RoomType: 2
+  - RoomPos: {x: -35.079227, y: 2.5, z: -14}
+    RoomType: 3
+  - RoomPos: {x: -1.9244862, y: 2.5, z: -14}
+    RoomType: 3

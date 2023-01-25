@@ -8,7 +8,7 @@ public class SaveHallway : ScriptableObject
 
     [SerializeField] private List<DoorSave> _rooms;
 
-    public TypeSpawnDoor TypeSpawnDoor => _typeSpawnDoor;
+    public TypeSpawnDoor TypeSpawnDoor { get => _typeSpawnDoor; set => _typeSpawnDoor = value; }
 
     public void ResetList()
     {

@@ -58,10 +58,11 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player\Move\MoveCharacter.cs" />
     <Compile Include="Assets\Scripts\Player\Move\MoveCamera.cs" />
-    <Compile Include="Assets\Scripts\Rooms\CreateRoom.cs" />
-    <Compile Include="Assets\Scripts\Rooms\Rooms.cs" />
-    <Compile Include="Assets\Scripts\Rooms\SpawnRooms.cs" />
-    <Compile Include="Assets\Scripts\Rooms\SaveHallway.cs" />
+    <Compile Include="Assets\Scripts\Rooms\Save\Rooms.cs" />
+    <Compile Include="Assets\Scripts\Rooms\Create\SpawnRooms.cs" />
+    <Compile Include="Assets\Scripts\Rooms\Save\SaveHallway.cs" />
+    <Compile Include="Assets\Scripts\Rooms\GenerateTypeDoors.cs" />
+    <Compile Include="Assets\Scripts\Rooms\LoadSceneOnTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

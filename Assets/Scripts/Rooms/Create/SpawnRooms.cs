@@ -14,6 +14,13 @@ public class SpawnRooms : MonoBehaviour
 
     private void Start()
     {
+        SetSceneData();
+
+        GenerateTypeDoors.SetDoors();
+    }
+
+    private void SetSceneData()
+    {
         switch (_saveHallway.TypeSpawnDoor)
         {
             case TypeSpawnDoor.NewHallway:
