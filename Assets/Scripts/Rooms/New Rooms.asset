@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be619b169c3afa145aa3b4c2e89dd291, type: 3}
+  m_Name: New Rooms
+  m_EditorClassIdentifier: 
+  _rooms:
+  - _typeRoom: 0
+    _prefabRoom: {fileID: 155618814452568171, guid: 6d76823c08de0a347bc883be7811e67b, type: 3}
+  - _typeRoom: 1
+    _prefabRoom: {fileID: 7013043161025607562, guid: b1f72cf2ed4bc9a4eaa5fa2c92b58c28, type: 3}
+  - _typeRoom: 2
+    _prefabRoom: {fileID: 226361131307922148, guid: b2f147e48f0809745a0b530ba794455f, type: 3}
+  - _typeRoom: 3
+    _prefabRoom: {fileID: 3973244476462219806, guid: 2a97a89af94642a4786dfc2eea35981a, type: 3}
+  - _typeRoom: 4
+    _prefabRoom: {fileID: 8165228925752128221, guid: 909578ef1a659a84e9fc59d654beefd1, type: 3}
+  - _typeRoom: 5
+    _prefabRoom: {fileID: 1728574028989326921, guid: c325e0af644e76e4190341daf7145d9f, type: 3}
