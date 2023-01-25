@@ -250,15 +250,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveData:
   - MoveMode: 0
-    Speed: 2
+    Speed: 7
     Recharge: 0
     Cost: 0
   - MoveMode: 1
-    Speed: 5
+    Speed: 15
     Recharge: 0
     Cost: 1
   - MoveMode: 2
-    Speed: 3
+    Speed: 12
     Recharge: 0
     Cost: 2
   _characterController: {fileID: 2674910426968985820}
