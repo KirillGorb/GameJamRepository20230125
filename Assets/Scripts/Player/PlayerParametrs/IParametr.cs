@@ -6,11 +6,11 @@ public class IParametr
 {
     private event Action<string> _changeParametr;
 
-    [SerializeField] private float _parametrMaxCount;
+    [SerializeField] private protected float _parametrMaxCount;
     [SerializeField] private protected float _parametr;
     [SerializeField] private protected DataParametr _data;
 
-    public float MaxCountParametr { get; set; }
+    public float MaxCountParametr { get => _parametrMaxCount; set => _parametrMaxCount = value; }
     public float CountParametr => _parametr;
 
     public DataParametr DataParametr => _data;
@@ -24,10 +24,10 @@ public class IParametr
     public virtual void AddParametr(float s)
     {
         _parametr += s;
-        if (_parametr > MaxCountParametr)
-            _parametr = MaxCountParametr;
+        if (_parametr > _parametrMaxCount)
+            _parametr = _parametrMaxCount;
 
-        _changeParametr?.Invoke($"{_parametr}/{MaxCountParametr}");
+        _changeParametr?.Invoke($"{_parametr}/{_parametrMaxCount}");
     }
 
     public virtual void DownParametr(float s)
@@ -35,16 +35,17 @@ public class IParametr
         if (_parametr >= 0)
             _parametr -= s;
 
-        _changeParametr?.Invoke($"{_parametr}/{MaxCountParametr}");
+        _changeParametr?.Invoke($"{_parametr}/{_parametrMaxCount}");
     }
 
     public virtual void ShopDopParametr(float s)
     {
-        MaxCountParametr += s;
-        _changeParametr?.Invoke($"{_parametr}/{MaxCountParametr}");
+        _parametrMaxCount += s;
+        _changeParametr?.Invoke($"{_parametr}/{_parametrMaxCount}");
     }
 }
 
+[Serializable]
 public class Health : IParametr
 {
     private event Action _death;
@@ -61,16 +62,25 @@ public class Health : IParametr
 
     public override void DownParametr(float s)
     {
+        if (_parametr <= 0) return;
+
         base.DownParametr(s);
+
         if (_parametr <= 0)
             _death?.Invoke();
     }
 
 }
 
+[Serializable]
 public class Experience : IParametr
 {
     public override void ShopDopParametr(float s) { }
+    public override void AddParametr(float s)
+    {
+        _parametrMaxCount += s;
+        base.AddParametr(s);
+    }
 }
 
 [Serializable]

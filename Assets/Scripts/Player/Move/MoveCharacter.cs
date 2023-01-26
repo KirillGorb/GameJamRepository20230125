@@ -30,7 +30,7 @@ public class MoveCharacter : MonoBehaviour
 
     private void SetMoveMode()
     {
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetKey(KeyCode.LeftShift))
             SwichMoveMode(OnMoveMove.Run);
         else if (Input.GetKey(KeyCode.Space))
             SwichMoveMode(OnMoveMove.Somersault);
