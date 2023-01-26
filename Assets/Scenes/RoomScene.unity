@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1564133596055155799, guid: 9b50c0cfb77c43e40b12a1b23cb82290, type: 3}
       propertyPath: _typeScene
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 238538144283815436, guid: 9b50c0cfb77c43e40b12a1b23cb82290, type: 3}
       propertyPath: m_RootOrder

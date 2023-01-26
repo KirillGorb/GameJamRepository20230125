@@ -41,7 +41,6 @@ public class SpawnRooms : MonoBehaviour
             for (int j = 0; j < _spawnData[j].countRoom; j++)
             {
                 var obj = Instantiate(room[Random.Range(0, room.Length)], SpawmPoint(i), Quaternion.identity);
-
                 _saveHallway.AddDoor(new DoorSave(obj.position, _spawnData[i]._roomType));
             }
         }
@@ -70,6 +69,7 @@ public struct DoorSave
         RoomPos = roomPos;
         RoomType = roomType;
     }
+
 }
 
 [System.Serializable]

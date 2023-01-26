@@ -8,12 +8,13 @@ public class GenerateTypeDoors : MonoBehaviour
     {
         _doors = FindObjectsOfType<LoadSceneOnTrigger>();
 
-        int idHallway = Random.Range(0, _doors.Length);
-        _doors[idHallway].SetTypeRenderScene(TypeScene.Hallway);
-
-        for (int i = 0; i < _doors.Length && i != idHallway; i++)
+        for (int i = 0; i < _doors.Length; i++)
         {
+            _doors[i].id = i;
             _doors[i].SetTypeRenderScene(TypeScene.Room);
         }
+
+        int idHallway = Random.Range(0, _doors.Length);
+        _doors[idHallway].SetTypeRenderScene(TypeScene.Hallway);
     }
 }

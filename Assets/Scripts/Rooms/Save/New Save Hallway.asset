@@ -14,19 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _typeSpawnDoor: 1
   _rooms:
-  - RoomPos: {x: -49.25, y: 2.5, z: 11.936946}
+  - RoomPos: {x: -49.25, y: 2.5, z: 5.620704}
     RoomType: 0
-  - RoomPos: {x: -49.25, y: 2.5, z: 7.3319535}
+  - RoomPos: {x: -49.25, y: 2.5, z: -13.527281}
     RoomType: 0
-  - RoomPos: {x: 48.699997, y: 2.5, z: -2.3571072}
+  - RoomPos: {x: 48.699997, y: 2.5, z: -6.670235}
     RoomType: 1
-  - RoomPos: {x: 48.7, y: 2.5, z: 9.171911}
+  - RoomPos: {x: 48.7, y: 2.5, z: -7.8395567}
     RoomType: 1
-  - RoomPos: {x: -9.024252, y: 2.5, z: 13.4}
+  - RoomPos: {x: 20.008936, y: 2.5, z: 13.4}
     RoomType: 2
-  - RoomPos: {x: -19.013407, y: 2.5, z: 13.400001}
+  - RoomPos: {x: -24.530657, y: 2.5, z: 13.4}
     RoomType: 2
-  - RoomPos: {x: -35.079227, y: 2.5, z: -14}
+  - RoomPos: {x: -43.578087, y: 2.5, z: -14}
     RoomType: 3
-  - RoomPos: {x: -1.9244862, y: 2.5, z: -14}
+  - RoomPos: {x: 27.522762, y: 2.5, z: -14}
     RoomType: 3
+  _isOpenDoor: 0001010101010000
