@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac458d0a013d9cc4ba78b1883eb74ffd, type: 3}
   m_Name: New Save Hallway
   m_EditorClassIdentifier: 
-  _typeSpawnDoor: 1
+  _typeSpawnDoor: 0
   _rooms:
   - RoomPos: {x: -49.25, y: 2.5, z: 5.620704}
     RoomType: 0

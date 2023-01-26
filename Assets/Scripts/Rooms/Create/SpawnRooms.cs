@@ -38,7 +38,7 @@ public class SpawnRooms : MonoBehaviour
         for (int i = 0; i < _spawnData.Length; i++)
         {
             var room = _rooms[_spawnData[i]._roomType]._prefabRoom;
-            for (int j = 0; j < _spawnData[j].countRoom; j++)
+            for (int j = 0; j < _spawnData[i].countRoom; j++)
             {
                 var obj = Instantiate(room[Random.Range(0, room.Length)], SpawmPoint(i), Quaternion.identity);
                 _saveHallway.AddDoor(new DoorSave(obj.position, _spawnData[i]._roomType));

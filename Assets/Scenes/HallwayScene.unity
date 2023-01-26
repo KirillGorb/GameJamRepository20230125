@@ -608,11 +608,11 @@ MonoBehaviour:
     _roomType: 1
   - _startPoint: {fileID: 1517161238}
     _endPoint: {fileID: 1192091058}
-    countRoom: 2
+    countRoom: 3
     _roomType: 2
   - _startPoint: {fileID: 362569971}
     _endPoint: {fileID: 103377064}
-    countRoom: 2
+    countRoom: 4
     _roomType: 3
 --- !u!1 &1517161237
 GameObject:

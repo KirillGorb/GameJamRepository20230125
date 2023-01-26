@@ -63,6 +63,8 @@
     <Compile Include="Assets\Scripts\Rooms\Save\SaveHallway.cs" />
     <Compile Include="Assets\Scripts\Rooms\GenerateTypeDoors.cs" />
     <Compile Include="Assets\Scripts\Rooms\LoadSceneOnTrigger.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerParametrs\IParametr.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerParametrs\Healths\ss.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
