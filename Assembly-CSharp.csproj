@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player\MovementCharacter.cs" />
     <Compile Include="Assets\Scripts\Player\CameraMove.cs" />
+    <Compile Include="Assets\Scripts\Player\PuckUpObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

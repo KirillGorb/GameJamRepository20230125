@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
+    public static bool isMoveCamera = true;
+
     [SerializeField] private Transform _player;
     [SerializeField] private Transform _camera;
 
@@ -17,6 +19,12 @@ public class CameraMove : MonoBehaviour
     }
 
     private void Update()
+    {
+        if (isMoveCamera)
+            MoveCamera();
+    }
+
+    private void MoveCamera()
     {
         rotationX += -Input.GetAxis("Mouse Y") * _speed;
         rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
