@@ -42,7 +42,15 @@ public class PuckUpObject : MonoBehaviour
 
         if (isPuckUp)
         {
-            _object.transform.position = (isObjectMove ? _objectInPointMove : _objectInPointState).position;
+            if (isObjectMove)
+            {
+                _object.transform.position = _objectInPointMove.position;
+            }
+            else
+            {
+                _object.transform.position = _objectInPointState.position;
+                _object.transform.rotation = transform.rotation;
+            }
 
             if (Input.GetAxis("Mouse ScrollWheel") != 0)
             {
