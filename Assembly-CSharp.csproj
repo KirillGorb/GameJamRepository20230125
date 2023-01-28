@@ -59,6 +59,9 @@
     <Compile Include="Assets\Scripts\Player\MoveCharacter\MovementCharacter.cs" />
     <Compile Include="Assets\Scripts\Player\MoveCharacter\CameraMove.cs" />
     <Compile Include="Assets\Scripts\Player\MoveCharacter\PuckUpObject.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Inventary.cs" />
+    <Compile Include="Assets\Scripts\Inventory\PuckUpItem.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Item.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
