@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\Inventory\Inventary.cs" />
     <Compile Include="Assets\Scripts\Inventory\PuckUpItem.cs" />
     <Compile Include="Assets\Scripts\Inventory\Item.cs" />
+    <Compile Include="Assets\Scripts\Inventory\OpenCloseGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

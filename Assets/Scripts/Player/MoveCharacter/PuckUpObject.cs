@@ -18,8 +18,10 @@ public class PuckUpObject : MonoBehaviour
 
     private void Update()
     {
-        PuckUp();
         Mouse();
+
+        if (!OpenCloseGame.isGameMode) return;
+        PuckUp();
     }
 
     private void PuckUp()
@@ -37,7 +39,7 @@ public class PuckUpObject : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && isPuckUp)
         {
             isPuckUp = false;
-            CameraMove.isMoveCamera = true;
+            OpenCloseGame.isGameMode = true;
         }
 
         if (isPuckUp)
@@ -59,7 +61,7 @@ public class PuckUpObject : MonoBehaviour
 
             if (Input.GetMouseButton(1))
             {
-                CameraMove.isMoveCamera = false;
+                OpenCloseGame.isGameMode = false;
                 isObjectMove = true;
 
                 _object.transform.rotation *= Quaternion.Euler(Input.GetAxis("Mouse X") * _speedMoveObject, -Input.GetAxis("Mouse Y") * _speedMoveObject, 0);
@@ -67,7 +69,7 @@ public class PuckUpObject : MonoBehaviour
 
             if (Input.GetMouseButtonUp(1))
             {
-                CameraMove.isMoveCamera = true;
+                OpenCloseGame.isGameMode = true;
                 isObjectMove = false;
 
                 _object.transform.rotation = Quaternion.Euler(0, 0, 0);

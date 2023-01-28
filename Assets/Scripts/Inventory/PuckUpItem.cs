@@ -12,6 +12,7 @@ public class PuckUpItem : MonoBehaviour
 
     private void Update()
     {
+        if (!OpenCloseGame.isGameMode) return;
         OnPuckUp();
     }
 

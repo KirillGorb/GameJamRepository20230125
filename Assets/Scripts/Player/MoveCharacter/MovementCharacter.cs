@@ -32,6 +32,7 @@ public class MovementCharacter : MonoBehaviour
 
     private void Update()
     {
+        if (!OpenCloseGame.isGameMode) return;
         SedMode();
         _characterController.Move(MoveVector);
     }

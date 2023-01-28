@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    public static bool isMoveCamera = true;
-
     [SerializeField] private Transform _player;
     [SerializeField] private Transform _camera;
 
@@ -20,8 +18,8 @@ public class CameraMove : MonoBehaviour
 
     private void Update()
     {
-        if (isMoveCamera)
-            MoveCamera();
+        if (!OpenCloseGame.isGameMode) return;
+        MoveCamera();
     }
 
     private void MoveCamera()
