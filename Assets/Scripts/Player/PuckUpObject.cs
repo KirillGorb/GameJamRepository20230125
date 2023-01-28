@@ -7,10 +7,12 @@ public class PuckUpObject : MonoBehaviour
 
     [SerializeField] private LayerMask _layreObject;
 
-    [SerializeField] private Transform _objectInPoint;
+    [SerializeField] private Transform _objectInPointState;
+    [SerializeField] private Transform _objectInPointMove;
     [SerializeField] private Transform _cameraPoint;
 
     private bool isPuckUp = false;
+    private bool isObjectMove;
 
     private GameObject _object;
 
@@ -22,11 +24,10 @@ public class PuckUpObject : MonoBehaviour
 
     private void PuckUp()
     {
-        if (Physics.Raycast(transform.position, _cameraPoint.position * _distancy, out RaycastHit hit, _distancy, _layreObject)&& Input.GetMouseButtonUp(0) && !isPuckUp)
+        if (Physics.Raycast(transform.position, _cameraPoint.position * _distancy, out RaycastHit hit, _distancy, _layreObject) && Input.GetMouseButtonUp(0) && !isPuckUp)
         {
             _object = hit.collider.gameObject;
             Debug.Log(_object);
-            CameraMove.isMoveCamera = false;
             isPuckUp = true;
         }
     }
@@ -41,16 +42,27 @@ public class PuckUpObject : MonoBehaviour
 
         if (isPuckUp)
         {
-            _object.transform.position = _objectInPoint.position;
+            _object.transform.position = (isObjectMove ? _objectInPointMove : _objectInPointState).position;
 
             if (Input.GetAxis("Mouse ScrollWheel") != 0)
             {
-                _objectInPoint.transform.position += Vector3.forward * Time.deltaTime * Input.GetAxis("Mouse ScrollWheel") * _speedMoveObject;
+                _objectInPointMove.transform.position += Vector3.forward * Time.deltaTime * Input.GetAxis("Mouse ScrollWheel") * _speedMoveObject;
             }
 
             if (Input.GetMouseButton(1))
             {
-                _object.transform.rotation *= Quaternion.Euler( Input.GetAxis("Mouse X") * _speedMoveObject, -Input.GetAxis("Mouse Y") * _speedMoveObject, 0);
+                CameraMove.isMoveCamera = false;
+                isObjectMove = true;
+
+                _object.transform.rotation *= Quaternion.Euler(Input.GetAxis("Mouse X") * _speedMoveObject, -Input.GetAxis("Mouse Y") * _speedMoveObject, 0);
+            }
+
+            if (Input.GetMouseButtonUp(1))
+            {
+                CameraMove.isMoveCamera = true;
+                isObjectMove = false;
+
+                _object.transform.rotation = Quaternion.Euler(0, 0, 0);
             }
         }
     }
