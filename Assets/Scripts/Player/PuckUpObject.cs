@@ -24,7 +24,7 @@ public class PuckUpObject : MonoBehaviour
 
     private void PuckUp()
     {
-        if (Physics.Raycast(transform.position, _cameraPoint.position * _distancy, out RaycastHit hit, _distancy, _layreObject) && Input.GetMouseButtonUp(0) && !isPuckUp)
+        if (Physics.Raycast(transform.position, _cameraPoint.position * _distancy, out RaycastHit hit, _distancy, _layreObject) && Input.GetKeyUp(KeyCode.E) && !isPuckUp)
         {
             _object = hit.collider.gameObject;
             Debug.Log(_object);
@@ -34,7 +34,7 @@ public class PuckUpObject : MonoBehaviour
 
     private void Mouse()
     {
-        if (Input.GetMouseButtonDown(0) && isPuckUp)
+        if (Input.GetKeyDown(KeyCode.E) && isPuckUp)
         {
             isPuckUp = false;
             CameraMove.isMoveCamera = true;
