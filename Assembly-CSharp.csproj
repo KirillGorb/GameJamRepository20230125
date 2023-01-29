@@ -64,6 +64,8 @@
     <Compile Include="Assets\Scripts\Inventory\Item.cs" />
     <Compile Include="Assets\Scripts\Inventory\OpenCloseGame.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\MenuController.cs" />
+    <Compile Include="Assets\Scripts\MenuScripts\LagasuSave.cs" />
+    <Compile Include="Assets\Scripts\MenuScripts\TextRenderOnLanges.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
