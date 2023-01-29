@@ -19,29 +19,10 @@ public class PuckUpObject : MonoBehaviour
     private void Update()
     {
         Mouse();
-
-        if (!OpenCloseGame.isGameMode) return;
-        PuckUp();
-    }
-
-    private void PuckUp()
-    {
-        if (Physics.Raycast(transform.position, _cameraPoint.position * _distancy, out RaycastHit hit, _distancy, _layreObject) && Input.GetKeyUp(KeyCode.E) && !isPuckUp)
-        {
-            _object = hit.collider.gameObject;
-            Debug.Log(_object);
-            isPuckUp = true;
-        }
     }
 
     private void Mouse()
     {
-        if (Input.GetKeyDown(KeyCode.E) && isPuckUp)
-        {
-            isPuckUp = false;
-            OpenCloseGame.isGameMode = true;
-        }
-
         if (isPuckUp)
         {
             if (isObjectMove)
@@ -65,9 +46,9 @@ public class PuckUpObject : MonoBehaviour
                 isObjectMove = true;
 
                 _object.transform.rotation *= Quaternion.Euler(Input.GetAxis("Mouse X") * _speedMoveObject, -Input.GetAxis("Mouse Y") * _speedMoveObject, 0);
+                return;
             }
-
-            if (Input.GetMouseButtonUp(1))
+            else if (Input.GetMouseButtonUp(1))
             {
                 OpenCloseGame.isGameMode = true;
                 isObjectMove = false;
@@ -75,5 +56,18 @@ public class PuckUpObject : MonoBehaviour
                 _object.transform.rotation = Quaternion.Euler(0, 0, 0);
             }
         }
+
+        if (Physics.Raycast(transform.position, _cameraPoint.position * _distancy, out RaycastHit hit, _distancy, _layreObject) && Input.GetKeyUp(KeyCode.E) && !isPuckUp)
+        {
+            _object = hit.collider.gameObject;
+            Debug.Log(_object);
+            isPuckUp = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.E) && isPuckUp)
+        {
+            isPuckUp = false;
+            OpenCloseGame.isGameMode = true;
+        }
+
     }
 }

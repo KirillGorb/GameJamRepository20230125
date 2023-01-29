@@ -7,6 +7,10 @@ public class OpenCloseGame : MonoBehaviour
     [SerializeField] private GameObject _panelInventory;
 
     private bool isOpenInventory = true;
+    private void Start()
+    {
+        bool isOpenInventory = true;
+    }
 
     private void Update()
     {
