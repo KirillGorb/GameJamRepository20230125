@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\MenuScripts\TextRenderOnLanges.cs" />
     <Compile Include="Assets\Scripts\AI\MoveAI.cs" />
     <Compile Include="Assets\Scripts\AI\DoorOpenClose.cs" />
+    <Compile Include="Assets\Scripts\Inventory\PuckDown.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

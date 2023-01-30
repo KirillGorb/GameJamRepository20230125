@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class Inventary : MonoBehaviour
 {
+    [SerializeField] private Sprite _defalteSpriteInventory;
+
     [SerializeField] private List<Sprite> _itemsIkone;
     [SerializeField] private List<GameObject> _items;
 
@@ -24,7 +26,7 @@ public class Inventary : MonoBehaviour
                 isSet = true;
                 _ikoneRender[i].isFull = true;
                 _ikoneRender[i]._image.sprite = _itemsIkone[id];
-
+                _ikoneRender[i].idItem = id;
                 break;
             }
         }
@@ -36,6 +38,19 @@ public class Inventary : MonoBehaviour
 
         Debug.Log(id);
     }
+
+    public void PuckDown(int id)
+    {
+        foreach (var item in _ikoneRender)
+        {
+            if (id == item.idItem)
+            {
+                item.isFull = false;
+                item._image.sprite = _defalteSpriteInventory;
+                break;
+            }
+        }
+    }
 }
 
 [System.Serializable]
@@ -43,4 +58,5 @@ class OnCell
 {
     public bool isFull;
     public Image _image;
+    public int idItem;
 }
