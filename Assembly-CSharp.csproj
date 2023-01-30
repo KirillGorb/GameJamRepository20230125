@@ -66,6 +66,8 @@
     <Compile Include="Assets\Scripts\MenuScripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\LagasuSave.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\TextRenderOnLanges.cs" />
+    <Compile Include="Assets\Scripts\AI\MoveAI.cs" />
+    <Compile Include="Assets\Scripts\AI\DoorOpenClose.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
