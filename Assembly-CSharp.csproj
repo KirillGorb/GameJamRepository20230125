@@ -56,19 +56,20 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Player\MoveCharacter\MovementCharacter.cs" />
-    <Compile Include="Assets\Scripts\Player\MoveCharacter\CameraMove.cs" />
-    <Compile Include="Assets\Scripts\Player\MoveCharacter\PuckUpObject.cs" />
     <Compile Include="Assets\Scripts\Inventory\Inventary.cs" />
-    <Compile Include="Assets\Scripts\Inventory\PuckUpItem.cs" />
-    <Compile Include="Assets\Scripts\Inventory\Item.cs" />
-    <Compile Include="Assets\Scripts\Inventory\OpenCloseGame.cs" />
-    <Compile Include="Assets\Scripts\MenuScripts\MenuController.cs" />
-    <Compile Include="Assets\Scripts\MenuScripts\LagasuSave.cs" />
+    <Compile Include="Assets\Scripts\Player\MoveCharacter\PuckUpObject.cs" />
+    <Compile Include="Assets\Scripts\Inventory\PuckDown.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\TextRenderOnLanges.cs" />
     <Compile Include="Assets\Scripts\AI\MoveAI.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Item.cs" />
+    <Compile Include="Assets\Scripts\Inventory\OpenCloseGame.cs" />
+    <Compile Include="Assets\Scripts\MenuScripts\LagasuSave.cs" />
+    <Compile Include="Assets\Scripts\MenuScripts\MenuController.cs" />
+    <Compile Include="Assets\Scripts\Player\MoveCharacter\CameraMove.cs" />
     <Compile Include="Assets\Scripts\AI\DoorOpenClose.cs" />
-    <Compile Include="Assets\Scripts\Inventory\PuckDown.cs" />
+    <Compile Include="Assets\Scripts\Player\MoveCharacter\MovementCharacter.cs" />
+    <Compile Include="Assets\Scripts\Inventory\PuckUpItem.cs" />
+    <Compile Include="Assets\Scripts\Player\ButtonChange.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
