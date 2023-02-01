@@ -1481,30 +1481,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1371232278548916537, guid: 9425c64062ab72541bb22a83e61ea0f0, type: 3}
-      propertyPath: m_Size.x
-      value: 4.268025
-      objectReference: {fileID: 0}
-    - target: {fileID: 1371232278548916537, guid: 9425c64062ab72541bb22a83e61ea0f0, type: 3}
-      propertyPath: m_Size.y
-      value: 4.390395
-      objectReference: {fileID: 0}
-    - target: {fileID: 1371232278548916537, guid: 9425c64062ab72541bb22a83e61ea0f0, type: 3}
-      propertyPath: m_Size.z
-      value: 3.2135248
-      objectReference: {fileID: 0}
-    - target: {fileID: 1371232278548916537, guid: 9425c64062ab72541bb22a83e61ea0f0, type: 3}
-      propertyPath: m_Center.x
-      value: 0.020900011
-      objectReference: {fileID: 0}
-    - target: {fileID: 1371232278548916537, guid: 9425c64062ab72541bb22a83e61ea0f0, type: 3}
-      propertyPath: m_Center.y
-      value: 0.18950033
-      objectReference: {fileID: 0}
-    - target: {fileID: 1371232278548916537, guid: 9425c64062ab72541bb22a83e61ea0f0, type: 3}
-      propertyPath: m_Center.z
-      value: 0.15723848
-      objectReference: {fileID: 0}
     - target: {fileID: 1371232278548916538, guid: 9425c64062ab72541bb22a83e61ea0f0, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1800,22 +1776,6 @@ PrefabInstance:
     - target: {fileID: 9010767146596568021, guid: 3c1f5ddaed9ed7d459c37509127f0997, type: 3}
       propertyPath: m_Name
       value: TriggerDialog
-      objectReference: {fileID: 0}
-    - target: {fileID: 9010767146596568027, guid: 3c1f5ddaed9ed7d459c37509127f0997, type: 3}
-      propertyPath: m_Size.x
-      value: 2.629921
-      objectReference: {fileID: 0}
-    - target: {fileID: 9010767146596568027, guid: 3c1f5ddaed9ed7d459c37509127f0997, type: 3}
-      propertyPath: m_Size.z
-      value: 3.8166547
-      objectReference: {fileID: 0}
-    - target: {fileID: 9010767146596568027, guid: 3c1f5ddaed9ed7d459c37509127f0997, type: 3}
-      propertyPath: m_Center.x
-      value: 0.8149605
-      objectReference: {fileID: 0}
-    - target: {fileID: 9010767146596568027, guid: 3c1f5ddaed9ed7d459c37509127f0997, type: 3}
-      propertyPath: m_Center.z
-      value: 1.4083273
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c1f5ddaed9ed7d459c37509127f0997, type: 3}

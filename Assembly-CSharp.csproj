@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Player\ButtonChange.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\DialogSystemScripts\ChangerTextDialog.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\DialogSystemScripts\TriggerSpawnDialogPanel.cs" />
+    <Compile Include="Assets\Scripts\MathinRender\RenderMathin.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
