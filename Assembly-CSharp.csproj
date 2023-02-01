@@ -70,9 +70,10 @@
     <Compile Include="Assets\Scripts\AI\DoorOpenClose.cs" />
     <Compile Include="Assets\Scripts\Player\MoveCharacter\MovementCharacter.cs" />
     <Compile Include="Assets\Scripts\Inventory\PuckUpItem.cs" />
+    <Compile Include="Assets\Scripts\Player\DoorOpenPlayer.cs" />
     <Compile Include="Assets\Scripts\Player\ButtonChange.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\DialogSystemScripts\ChangerTextDialog.cs" />
-    <Compile Include="Assets\Scripts\Player\DoorOpenPlayer.cs" />
+    <Compile Include="Assets\Scripts\MenuScripts\DialogSystemScripts\TriggerSpawnDialogPanel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
