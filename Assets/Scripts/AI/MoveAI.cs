@@ -8,14 +8,14 @@ public class MoveAI : MonoBehaviour
     [SerializeField] private List<DestinationPoint> _points;
     //List<DestinationPoint> completed;
 
-    [SerializeField] UnityEngine.Events.UnityEvent<int> SetAnimatorState;
-    
+    [SerializeField] private UnityEngine.Events.UnityEvent<int> SetAnimatorState;
+
     //[SerializeField] private float _minDistancy;
 
     public DestinationPoint currentPoint;
 
     private bool _isMove = true;
-    bool interupt;
+    private bool interupt;
 
     private NavMeshAgent _agent;
 
@@ -27,17 +27,15 @@ public class MoveAI : MonoBehaviour
 
     private void Update()
     {
-
-        if (currentPoint != null) DetectPoint();
-        else GetNextPoint();
-        
+        if (currentPoint != null)
+            DetectPoint();
+        else
+            GetNextPoint();
     }
 
     public void AddNewDestination(DestinationPoint point)
     {
         _points.Add(point);
-
-
     }
     public void AddDestinationAfterCurrent(DestinationPoint point)
     {
@@ -48,33 +46,29 @@ public class MoveAI : MonoBehaviour
         if (keepCurrent) _points.Insert(0, currentPoint);
         _points.Insert(0, point);
         if (!keepCurrent) FinalizeDP(currentPoint);
+
         if (!_isMove)
         {
-
-
-            
             interupt = true;
         }
         else
         {
-            
             GetNextPoint();
-           
         }
     }
 
     private void DetectPoint()
     {
-        
         if (Vector3.Distance(_agent.transform.position, currentPoint.transform.position) <= currentPoint.stopDist && _isMove)
         {
             StartCoroutine(Stoping(currentPoint));
         }
     }
 
-    void GetNextPoint()
+    private void GetNextPoint()
     {
         if (_points.Count <= 0) return;
+
         currentPoint = _points[0];
         _points.RemoveAt(0);
         _agent.SetDestination(currentPoint.transform.position);
@@ -83,27 +77,30 @@ public class MoveAI : MonoBehaviour
     private IEnumerator Stoping(DestinationPoint point)
     {
         _isMove = false;
-        SetAnimatorState?.Invoke(point.animationCode);        
+        SetAnimatorState?.Invoke(point.animationCode);
         _agent.isStopped = true;
+
         float timeStarted = Time.time;
         float delay = currentPoint.actionDuration;
+
         yield return new WaitWhile(() => Time.time - timeStarted < delay && !interupt);
-        
         SetAnimatorState?.Invoke(0);
+
         yield return new WaitForSeconds(0.5f);
         _agent.isStopped = false;
+
         if (!interupt) FinalizeDP(currentPoint);
+
         interupt = false;
         currentPoint = null;
         _isMove = true;
     }
 
-    void FinalizeDP(DestinationPoint p)
+    private void FinalizeDP(DestinationPoint p)
     {
         if (!p) return;
         if (p.repeat) AddNewDestination(p);
         else Destroy(p.gameObject);
-        
     }
 
     private void OnTriggerEnter(Collider other)

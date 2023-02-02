@@ -67,14 +67,22 @@
     <Compile Include="Assets\Scripts\MenuScripts\LagasuSave.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\Player\MoveCharacter\CameraMove.cs" />
+    <Compile Include="Assets\Scripts\MenuScripts\DialogSystemScripts\TriggerSpawnDialogPanel.cs" />
+    <Compile Include="Assets\Scripts\MathinRender\RenderMathin.cs" />
+    <Compile Include="Assets\Scripts\AI\HumanoidAnimationControll.cs" />
     <Compile Include="Assets\Scripts\AI\DoorOpenClose.cs" />
     <Compile Include="Assets\Scripts\Player\MoveCharacter\MovementCharacter.cs" />
+    <Compile Include="Assets\Scripts\AI\DestinationPoint.cs" />
     <Compile Include="Assets\Scripts\Inventory\PuckUpItem.cs" />
     <Compile Include="Assets\Scripts\Player\DoorOpenPlayer.cs" />
     <Compile Include="Assets\Scripts\Player\ButtonChange.cs" />
+    <Compile Include="Assets\Scripts\AI\NoiseTest.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\DialogSystemScripts\ChangerTextDialog.cs" />
-    <Compile Include="Assets\Scripts\MenuScripts\DialogSystemScripts\TriggerSpawnDialogPanel.cs" />
-    <Compile Include="Assets\Scripts\MathinRender\RenderMathin.cs" />
+    <Compile Include="Assets\Scripts\MathinRender\UIDetectButton.cs" />
+    <Compile Include="Assets\Scripts\AI\AIPointDetectOnPlayerPuckDown.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Meshes\Characters\StandardHair.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
