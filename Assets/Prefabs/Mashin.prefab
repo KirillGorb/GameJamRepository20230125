@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8235624415801760902}
   - component: {fileID: 8235624415801760903}
   - component: {fileID: 8235624415801760900}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 8235624416490543613}
   - component: {fileID: 8235624416490543615}
   - component: {fileID: 2902391559395065029}
+  - component: {fileID: 1437336735}
   m_Layer: 7
   m_Name: Mashin
   m_TagString: Untagged
@@ -173,6 +174,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startMathin: {fileID: 8235624415801760901}
   _newMathin: {fileID: 8235624416512578868}
+--- !u!114 &1437336735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8235624416490543602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14a7b34a6abd36640a303865ca630cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonText: E
 --- !u!1 &8235624416512578868
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,7 +199,7 @@ GameObject:
   - component: {fileID: 8235624416512578865}
   - component: {fileID: 8235624416512578870}
   - component: {fileID: 8235624416512578871}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

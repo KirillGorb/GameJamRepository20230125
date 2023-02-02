@@ -1,21 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 public class HumanoidAnimationControll : MonoBehaviour
 {
-    [SerializeField] float moveMultiplier;
-    [SerializeField] string horizontalAnimationParameter;
-    [SerializeField] string verticalAnimationParameter;
-    [SerializeField] string animTagParameter;
+    [SerializeField] private float moveMultiplier;
 
-    int horID;
-    int vertID;
-    int animID;
+    [SerializeField] private string horizontalAnimationParameter;
+    [SerializeField] private string verticalAnimationParameter;
+    [SerializeField] private string animTagParameter;
+
+    private int horID;
+    private int vertID;
+    private int animID;
 
 
-    NavMeshAgent agent;
-    Animator animator;
+    private NavMeshAgent agent;
+    private Animator animator;
 
     public void PlayAnimation(int num)
     {
@@ -35,10 +34,7 @@ public class HumanoidAnimationControll : MonoBehaviour
     private void Update()
     {
         Debug.DrawRay(transform.position, agent.velocity);
-        animator.SetFloat(horID, transform.InverseTransformVector(agent.velocity).x*moveMultiplier);
-        animator.SetFloat(vertID, transform.InverseTransformVector(agent.velocity).z*moveMultiplier);
-
+        animator.SetFloat(horID, transform.InverseTransformVector(agent.velocity).x * moveMultiplier);
+        animator.SetFloat(vertID, transform.InverseTransformVector(agent.velocity).z * moveMultiplier);
     }
-
-
 }

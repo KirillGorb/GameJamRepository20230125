@@ -300,9 +300,6 @@ MonoBehaviour:
     m_Bits: 456
   _cameraPoint: {fileID: 4146539316603743243}
   _textImage: {fileID: 0}
-  _strButton:
-  - E
-  - LKM
   _textButton: {fileID: 0}
 --- !u!114 &4146539317935693691
 MonoBehaviour:

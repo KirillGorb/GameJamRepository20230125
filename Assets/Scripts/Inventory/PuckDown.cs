@@ -16,8 +16,8 @@ public class PuckDown : MonoBehaviour
         {
             var s = hit.collider;
 
-            _inventary.PuckDown(s.GetComponent<Item>().id);
-            s.GetComponent<RenderMathin>().SetNewMathin();
+            if (_inventary.PuckDown(s.GetComponent<Item>().id))
+                s.GetComponent<RenderMathin>().SetNewMathin();
         }
     }
 }
