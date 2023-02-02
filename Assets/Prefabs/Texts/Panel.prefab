@@ -249,6 +249,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 72414067132634438}
   _panel: {fileID: 72414067195457030}
-  _timer: 5
-  _dialogTexts: {fileID: 11400000, guid: 6e3cf9582f1a1034e8d8b264316c8d46, type: 2}
-  id: 0
+  _timer: 3
