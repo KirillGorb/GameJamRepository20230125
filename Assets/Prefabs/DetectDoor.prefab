@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1371232278548916538}
   - component: {fileID: 1371232278548916537}
   - component: {fileID: 1371232278548916536}
-  - component: {fileID: 1366616285495056987}
+  - component: {fileID: 42390464}
   m_Layer: 8
   m_Name: DetectDoor
   m_TagString: Untagged
@@ -63,7 +63,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _oneState: {fileID: 1371232280400117228}
   _twoState: {fileID: 1371232278837596627}
---- !u!114 &1366616285495056987
+--- !u!114 &42390464
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 1371232278837596630}
   - component: {fileID: 1371232278837596631}
   - component: {fileID: 1371232278837596624}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 1371232280400117137}
   - component: {fileID: 1371232280400117138}
   - component: {fileID: 1371232280400117139}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
