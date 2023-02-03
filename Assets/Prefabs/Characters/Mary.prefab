@@ -3405,7 +3405,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8166980967675018886}
   - component: {fileID: 2861717879866844412}
-  - component: {fileID: 810127588}
+  - component: {fileID: 243063785}
+  - component: {fileID: 243063784}
+  - component: {fileID: 243063781}
+  - component: {fileID: 243063782}
+  - component: {fileID: 243063783}
   m_Layer: 0
   m_Name: Mary
   m_TagString: Untagged
@@ -3446,7 +3450,7 @@ Animator:
   m_GameObject: {fileID: 8799225839856477244}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 3a2bb1a578bf40547bd7f04480ece43a, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 74ed5e39e2fcade4bbc7875967689378, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -3456,8 +3460,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!143 &810127588
-CharacterController:
+--- !u!54 &243063785
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8799225839856477244}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &243063784
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3466,14 +3486,77 @@ CharacterController:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  m_Radius: 0.25
   m_Height: 1.7
-  m_Radius: 0.27
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
+  m_Direction: 1
   m_Center: {x: 0, y: 0.85, z: 0}
+--- !u!114 &243063781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8799225839856477244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de663201b5ac48c4191f75c9e4cfc857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _points: []
+  SetAnimatorState:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 243063782}
+        m_TargetAssemblyTypeName: HumanoidAnimationControll, Assembly-CSharp
+        m_MethodName: PlayAnimation
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  currentPoint: {fileID: 0}
+--- !u!114 &243063782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8799225839856477244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ad050a8fd0e94e418384e207cf1d2b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveMultiplier: 1.5
+  horizontalAnimationParameter: Side
+  verticalAnimationParameter: Front
+  animTagParameter: Animation
+--- !u!195 &243063783
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8799225839856477244}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 1.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &8800510281952583670
 GameObject:
   m_ObjectHideFlags: 0
