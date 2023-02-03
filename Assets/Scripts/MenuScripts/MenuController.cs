@@ -1,12 +1,16 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-    public static TextRenderOnLanges[] _renders;
-
+    [SerializeField] private TextRenderOnLanges[] _renders;
     [SerializeField] private GameObject[] _panels;
+
+    [SerializeField] private int _idScene = 1;
+
+    [SerializeField] private LagasuSave _saveLages;
+
 
     private void Start()
     {
@@ -22,7 +26,7 @@ public class MenuController : MonoBehaviour
 
     public void SetLages(int id)
     {
-        LagasuSave.IdLagasu = id;
+        _saveLages.IdLagasu = id;
         RenderTextLanges();
     }
 
@@ -30,12 +34,14 @@ public class MenuController : MonoBehaviour
     private void RenderTextLanges()
     {
         foreach (var item in _renders)
-            item.Checnge();
+        {
+            item.RenderText(_saveLages.IdLagasu);
+        }
     }
 
     private IEnumerator StartScene(float time)
     {
         yield return new WaitForSeconds(time);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(_idScene);
     }
 }

@@ -61,7 +61,6 @@
     <Compile Include="Assets\Scripts\MenuScripts\DialogSystemScripts\DialogListString.cs" />
     <Compile Include="Assets\Scripts\AI\AIPointDetectOnPlayerPuckDown.cs" />
     <Compile Include="Assets\Scripts\Inventory\PuckDown.cs" />
-    <Compile Include="Assets\Scripts\MenuScripts\TextRenderOnLanges.cs" />
     <Compile Include="Assets\Scripts\AI\MoveAI.cs" />
     <Compile Include="Assets\Scripts\Inventory\Item.cs" />
     <Compile Include="Assets\Scripts\Inventory\OpenCloseGame.cs" />
@@ -80,6 +79,7 @@
     <Compile Include="Assets\Scripts\Player\ButtonChange.cs" />
     <Compile Include="Assets\Scripts\AI\NoiseTest.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\DialogSystemScripts\ChangerTextDialog.cs" />
+    <Compile Include="Assets\Scripts\MenuScripts\TextRenderOnLanges.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Meshes\20 Ground Material Sets MAN MADE\readme.txt" />
