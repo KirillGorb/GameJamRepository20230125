@@ -1,20 +1,22 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Text))]
 public class TextRenderOnLanges : MonoBehaviour
 {
-    [SerializeField] private string[] _text;
+    [SerializeField] private string[] _textRender = new string[3];
 
-    private Text _textChange;
+    [SerializeField] private Text _text;
 
-    private void Start()
+    private void Awake()
     {
-        _textChange = GetComponent<Text>();
-        Checnge();
+        _text = GetComponent<Text>();
+        RenderText(0);
     }
 
-    public void Checnge()
+    public void RenderText(int id)
     {
-        _textChange.text = _text[LagasuSave.IdLagasu];
+        _text.text = _textRender[id < _textRender.Length && id >= 0 ? id : 0];
+        Debug.Log(id);
     }
 }

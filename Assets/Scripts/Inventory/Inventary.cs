@@ -39,17 +39,22 @@ public class Inventary : MonoBehaviour
         Debug.Log(id);
     }
 
-    public void PuckDown(int id)
+    public bool PuckDown(int id)
     {
+        bool isPuck = false;
+
         foreach (var item in _ikoneRender)
         {
             if (id == item.idItem)
             {
                 item.isFull = false;
                 item._image.sprite = _defalteSpriteInventory;
+                isPuck = true;
                 break;
             }
         }
+
+        return isPuck;
     }
 }
 

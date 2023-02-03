@@ -14,7 +14,10 @@ public class PuckDown : MonoBehaviour
     {
         if (Physics.Raycast(transform.position, _cameraPoint.position * _distancy, out RaycastHit hit, _distancy, _layreObject) && Input.GetKeyDown(KeyCode.E))
         {
-            _inventary.PuckDown(hit.collider.GetComponent<Item>().id);
+            var s = hit.collider;
+
+            if (_inventary.PuckDown(s.GetComponent<Item>().id))
+                s.GetComponent<RenderMathin>().SetNewMathin();
         }
     }
 }

@@ -1,7 +1,10 @@
 using UnityEngine;
+using System;
 
 public class PuckUpObject : MonoBehaviour
 {
+    public static event Action<Vector3> AIPointCreate;
+
     [SerializeField] private float _distancy;
     [SerializeField] private float _speedMoveObject;
 
@@ -66,6 +69,7 @@ public class PuckUpObject : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.E) && isPuckUp)
         {
             isPuckUp = false;
+            AIPointCreate?.Invoke(_object.transform.position);
             OpenCloseGame.isGameMode = true;
         }
 

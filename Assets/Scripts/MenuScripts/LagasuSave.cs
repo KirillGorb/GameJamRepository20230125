@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public static class LagasuSave 
+[CreateAssetMenu()]
+public class LagasuSave : ScriptableObject
 {
-    public static int IdLagasu = 0;
+    public int IdLagasu = 1;
 }
