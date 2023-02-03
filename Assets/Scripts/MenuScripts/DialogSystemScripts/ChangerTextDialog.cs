@@ -8,12 +8,12 @@ public class ChangerTextDialog : MonoBehaviour
     [SerializeField] private GameObject _panel;
     [SerializeField] private float _timer;
 
-    public void SetDialog(DialogListString dialogTexts) =>
-        StartCoroutine(TextChange(dialogTexts));
+    public void SetDialog(DialogListString dialogTexts, int id) =>
+        StartCoroutine(TextChange(dialogTexts, id));
 
-    private IEnumerator TextChange(DialogListString dialogTexts)
+    private IEnumerator TextChange(DialogListString dialogTexts, int id)
     {
-        foreach (var item in dialogTexts.Text)
+        foreach (var item in dialogTexts.Text(id))
         {
             _text.text = item;
             yield return new WaitForSeconds(_timer);

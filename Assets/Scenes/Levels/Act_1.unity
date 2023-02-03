@@ -487,6 +487,10 @@ PrefabInstance:
       propertyPath: _canvas
       value: 
       objectReference: {fileID: 654509070}
+    - target: {fileID: 1861943710153564381, guid: 3c1f5ddaed9ed7d459c37509127f0997, type: 3}
+      propertyPath: _langesSave
+      value: 
+      objectReference: {fileID: 11400000, guid: 40486f707e7012f408125ae3eadbcadf, type: 2}
     - target: {fileID: 9010767146596568020, guid: 3c1f5ddaed9ed7d459c37509127f0997, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2192,6 +2196,10 @@ PrefabInstance:
       propertyPath: _canvas
       value: 
       objectReference: {fileID: 654509070}
+    - target: {fileID: 1861943710153564381, guid: 3c1f5ddaed9ed7d459c37509127f0997, type: 3}
+      propertyPath: _langesSave
+      value: 
+      objectReference: {fileID: 11400000, guid: 40486f707e7012f408125ae3eadbcadf, type: 2}
     - target: {fileID: 1861943710153564381, guid: 3c1f5ddaed9ed7d459c37509127f0997, type: 3}
       propertyPath: _dialogTexts
       value: 
