@@ -18,7 +18,7 @@ public class MenuController : MonoBehaviour
     private void Start()
     {
         _renders = FindObjectsOfType<TextRenderOnLanges>();
-
+        RenderTextLanges();
         foreach (var item in _panels)
             item.SetActive(false);
     }
@@ -54,9 +54,7 @@ public class MenuController : MonoBehaviour
     private void RenderTextLanges()
     {
         foreach (var item in _renders)
-        {
             item.RenderText(_saveLages.IdLagasu);
-        }
     }
 
     private IEnumerator StartScene(float time)

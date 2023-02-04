@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bde62983f6c24a848a012806de3d8d4d, type: 3}
   m_Name: New Lagasu Save
   m_EditorClassIdentifier: 
-  IdLagasu: 0
+  IdLagasu: 1
