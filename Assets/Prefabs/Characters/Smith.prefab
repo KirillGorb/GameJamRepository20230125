@@ -1554,6 +1554,7 @@ GameObject:
   - component: {fileID: 837612009}
   - component: {fileID: 837612015}
   - component: {fileID: 937945915}
+  - component: {fileID: 1987777901252332833}
   m_Layer: 0
   m_Name: Smith
   m_TagString: Untagged
@@ -1829,6 +1830,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1987777901252332833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3911593675192856097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3545f4c622c82bb4e9a650e6125be66a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _distancyDetectNewPoint: 5
 --- !u!1 &4018693356863450635
 GameObject:
   m_ObjectHideFlags: 0
