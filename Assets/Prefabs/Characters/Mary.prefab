@@ -3411,6 +3411,7 @@ GameObject:
   - component: {fileID: 243063782}
   - component: {fileID: 243063783}
   - component: {fileID: 7265007541261148218}
+  - component: {fileID: -3301958947148166724}
   m_Layer: 0
   m_Name: Mary
   m_TagString: Untagged
@@ -3684,6 +3685,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-3301958947148166724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8799225839856477244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3545f4c622c82bb4e9a650e6125be66a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _distancyDetectNewPoint: 5
 --- !u!1 &8800510281952583670
 GameObject:
   m_ObjectHideFlags: 0
