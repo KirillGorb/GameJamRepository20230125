@@ -12,6 +12,8 @@ public class ButtonChange : MonoBehaviour
 
     [SerializeField] private Text _textButton;
 
+    private Vector3 direction => Camera.main.transform.TransformDirection(Vector3.forward);
+
     private void Start()
     {
         _textImage.SetActive(false);
@@ -39,7 +41,7 @@ public class ButtonChange : MonoBehaviour
 
     private void Changer()
     {
-        if (Physics.Raycast(transform.position, _cameraPoint.position * _distancy, out RaycastHit hit, _distancy, _layreObject) && hit.collider.TryGetComponent(out UIDetectButton uiDetect))
+        if (Physics.Raycast(Camera.main.transform.position, direction, out RaycastHit hit, _distancy, _layreObject) && hit.collider.TryGetComponent(out UIDetectButton uiDetect))
             ChangeButtonText(true, uiDetect);
         else
             ChangeButtonText(false);

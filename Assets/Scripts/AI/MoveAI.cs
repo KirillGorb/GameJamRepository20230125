@@ -10,11 +10,15 @@ public class MoveAI : MonoBehaviour
 
     [SerializeField] private UnityEngine.Events.UnityEvent<int> SetAnimatorState;
 
+    [SerializeField] UnityEngine.Events.UnityEvent onWalkStart;
+    [SerializeField] UnityEngine.Events.UnityEvent onWalkEnd;
+
     //[SerializeField] private float _minDistancy;
 
     public DestinationPoint currentPoint;
 
     private bool _isMove = true;
+    bool _isMoveTrig;
     private bool interupt;
 
     private NavMeshAgent _agent;
@@ -27,6 +31,14 @@ public class MoveAI : MonoBehaviour
 
     private void Update()
     {
+        if (_isMove != _isMoveTrig)
+        {
+            if (_isMove) onWalkStart?.Invoke();
+            else onWalkEnd?.Invoke();
+
+            _isMoveTrig = _isMove;
+        }
+
         if (currentPoint != null)
             DetectPoint();
         else
@@ -59,7 +71,10 @@ public class MoveAI : MonoBehaviour
 
     private void DetectPoint()
     {
-        if (Vector3.Distance(_agent.transform.position, currentPoint.transform.position) <= currentPoint.stopDist && _isMove)
+        var p1 = new Vector3(_agent.transform.position.x, 0, _agent.transform.position.z);
+        var p2 = new Vector3(currentPoint.transform.position.x, 0, currentPoint.transform.position.z);
+
+        if (Vector3.Distance(p1, p2) <= currentPoint.stopDist && _isMove)
         {
             StartCoroutine(Stoping(currentPoint));
         }
@@ -78,12 +93,16 @@ public class MoveAI : MonoBehaviour
     {
         _isMove = false;
         SetAnimatorState?.Invoke(point.animationCode);
+
         _agent.isStopped = true;
 
         float timeStarted = Time.time;
         float delay = currentPoint.actionDuration;
+        point.Enter();
+
 
         yield return new WaitWhile(() => Time.time - timeStarted < delay && !interupt);
+        point.Exit();
         SetAnimatorState?.Invoke(0);
 
         yield return new WaitForSeconds(0.5f);

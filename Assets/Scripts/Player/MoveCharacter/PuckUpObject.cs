@@ -12,12 +12,13 @@ public class PuckUpObject : MonoBehaviour
 
     [SerializeField] private Transform _objectInPointState;
     [SerializeField] private Transform _objectInPointMove;
-    [SerializeField] private Transform _cameraPoint;
 
     private bool isPuckUp = false;
     private bool isObjectMove;
 
     private GameObject _object;
+
+    private Vector3 direction => Camera.main.transform.TransformDirection(Vector3.forward);
 
     private void Update()
     {
@@ -60,7 +61,7 @@ public class PuckUpObject : MonoBehaviour
             }
         }
 
-        if (Physics.Raycast(transform.position, _cameraPoint.position * _distancy, out RaycastHit hit, _distancy, _layreObject) && Input.GetKeyUp(KeyCode.E) && !isPuckUp)
+        if (Physics.Raycast(Camera.main.transform.position, direction, out RaycastHit hit, _distancy, _layreObject) && Input.GetKeyUp(KeyCode.E) && !isPuckUp)
         {
             _object = hit.collider.gameObject;
             Debug.Log(_object);
@@ -73,5 +74,11 @@ public class PuckUpObject : MonoBehaviour
             OpenCloseGame.isGameMode = true;
         }
 
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(Camera.main.transform.position, direction * _distancy);
     }
 }

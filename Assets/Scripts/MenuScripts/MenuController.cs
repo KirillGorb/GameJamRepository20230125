@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
+    [SerializeField] private GameObject _menuPanel;
+
     [SerializeField] private TextRenderOnLanges[] _renders;
     [SerializeField] private GameObject[] _panels;
 
@@ -11,13 +13,31 @@ public class MenuController : MonoBehaviour
 
     [SerializeField] private LagasuSave _saveLages;
 
+    private bool isPause;
 
     private void Start()
     {
         _renders = FindObjectsOfType<TextRenderOnLanges>();
-
+        RenderTextLanges();
         foreach (var item in _panels)
             item.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            isPause = !isPause;
+            StopGame(isPause);
+        }
+    }
+
+    public void StopGame(bool isStop)
+    {
+        Cursor.lockState = isStop ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.visible = isStop;
+        _menuPanel.SetActive(isStop);
+        OpenCloseGame.isGameMode = !isStop;
     }
 
     public void SetScene(float timer) => StartCoroutine(StartScene(timer));
@@ -34,9 +54,7 @@ public class MenuController : MonoBehaviour
     private void RenderTextLanges()
     {
         foreach (var item in _renders)
-        {
             item.RenderText(_saveLages.IdLagasu);
-        }
     }
 
     private IEnumerator StartScene(float time)

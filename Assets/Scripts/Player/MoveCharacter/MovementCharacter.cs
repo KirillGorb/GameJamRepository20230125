@@ -39,16 +39,17 @@ public class MovementCharacter : MonoBehaviour
 
     private void SedMode()
     {
-        if (isSed)
+        if (Input.GetKey(KeyCode.LeftControl))
         {
             _characterController.height = 1;
             _characterController.center = new Vector3(0, 0.5f, 0);
+            _characterController.Move(new Vector3(0, -1, 0));
         }
-        else
+        else if (Input.GetKeyUp(KeyCode.LeftControl))
         {
             _characterController.height = 2;
             _characterController.center = new Vector3(0, 0, 0);
+            _characterController.Move(new Vector3(0, 1, 0));
         }
-
     }
 }

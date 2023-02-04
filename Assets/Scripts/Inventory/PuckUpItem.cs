@@ -36,9 +36,11 @@ public class PuckUpItem : MonoBehaviour
     //private void PuckUp(Item item) =>
     //    _inventary.PuckUp(item.gameObject, item.id);
 
+    private Vector3 direction => Camera.main.transform.TransformDirection(Vector3.forward);
+
     private void OnPuckUp()
     {
-        if (Physics.Raycast(transform.position, _cameraPoint.position * _distancy, out RaycastHit hit, _distancy, _layreObject) && Input.GetKeyDown(KeyCode.E))
+        if (Physics.Raycast(Camera.main.transform.position, direction, out RaycastHit hit, _distancy, _layreObject) && Input.GetKeyDown(KeyCode.E))
         {
             var item = hit.collider.gameObject.GetComponent<Item>();
             _inventary.PuckUp(item.gameObject, item.id);
