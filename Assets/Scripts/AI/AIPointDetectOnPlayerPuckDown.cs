@@ -8,6 +8,7 @@ public class AIPointDetectOnPlayerPuckDown : MonoBehaviour
 
     private void Start()
     {
+        _moveAI = GetComponent<MoveAI>();
         PuckUpObject.AIPointCreate += Detect;
     }
 
