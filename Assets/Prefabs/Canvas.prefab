@@ -1485,8 +1485,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u0418\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u044C"
   - Inventory
+  - "\u0418\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u044C"
   - 2
   _text: {fileID: 8786729644869095145}
 --- !u!1 &2109101190383808335
@@ -1739,8 +1739,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u041C\u0443\u0437\u044B\u043A\u0430"
   - Musec
+  - "\u041C\u0443\u0437\u044B\u043A\u0430"
   - 2
   _text: {fileID: 0}
 --- !u!1 &2855388642313698486
@@ -1837,8 +1837,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
   - Resume
+  - "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
   - 2
   _text: {fileID: 8023267254574959475}
 --- !u!1 &2976238211185472559
@@ -2161,8 +2161,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u0412\u044B\u0445\u043E\u0434"
   - Exit
+  - "\u0412\u044B\u0445\u043E\u0434"
   - 2
   _text: {fileID: 1115379393686904091}
 --- !u!1 &4387390631446573774
@@ -2259,8 +2259,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u0412 \u043C\u0435\u043D\u044E"
   - In menu
+  - "\u0412 \u043C\u0435\u043D\u044E"
   - 2
   _text: {fileID: 857116328147469012}
 --- !u!1 &4576018811292205372
@@ -3145,8 +3145,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
   - Setting
+  - "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
   - 2
   _text: {fileID: 7439531847799139372}
 --- !u!1 &6771988411587892403
@@ -3818,8 +3818,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u0421\u0441\u044B\u043B\u043A\u0430 \u043D\u0430 \u0441\u0435\u0440\u0432\u0435\u0440"
   - Serves
+  - "\u0421\u0441\u044B\u043B\u043A\u0430 \u043D\u0430 \u0441\u0435\u0440\u0432\u0435\u0440"
   - 2
   _text: {fileID: 0}
 --- !u!1 &8229705502494190818
@@ -3902,7 +3902,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Russia
+  m_Text: Engle
 --- !u!114 &8352421176434755178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3916,8 +3916,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - Russia
   - Engle
+  - Russia
   - 2
   _text: {fileID: 0}
 --- !u!1 &8406454787662809568
@@ -4176,11 +4176,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Russia
-      m_Image: {fileID: 0}
     - m_Text: Engle
       m_Image: {fileID: 0}
-    - m_Text: Britan
+    - m_Text: Russia
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:

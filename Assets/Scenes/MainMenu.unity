@@ -297,8 +297,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u0421\u0441\u044B\u043B\u043A\u0430 \u043D\u0430 \u0441\u0435\u0440\u0432\u0435\u0440"
   - Serves
+  - "\u0421\u0441\u044B\u043B\u043A\u0430 \u043D\u0430 \u0441\u0435\u0440\u0432\u0435\u0440"
   - 2
   _text: {fileID: 0}
 --- !u!1 &69432630
@@ -808,8 +808,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u0410\u043A\u0442 1 \u0411\u0443\u0434\u0438\u043B\u044C\u043D\u0438\u043A"
   - Act 1 Ches
+  - "\u0410\u043A\u0442 1 \u0411\u0443\u0434\u0438\u043B\u044C\u043D\u0438\u043A"
   - "\u0410\u043A\u0442 1 \u0411\u0443\u0434\u0438\u043B\u044C\u043D\u0438\u043A"
   _text: {fileID: 0}
 --- !u!1 &312083490
@@ -829,7 +829,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &312083491
 RectTransform:
   m_ObjectHideFlags: 0
@@ -987,8 +987,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u0412\u044B\u0445\u043E\u0434"
   - Exit
+  - "\u0412\u044B\u0445\u043E\u0434"
   - 2
   _text: {fileID: 0}
 --- !u!1 &362572149
@@ -1231,8 +1231,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u0412 \u043C\u0435\u043D\u044E"
   - In Menu
+  - "\u0412 \u043C\u0435\u043D\u044E"
   - 2
   _text: {fileID: 0}
 --- !u!1 &408960469
@@ -1693,11 +1693,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Russia
-      m_Image: {fileID: 0}
     - m_Text: Engle
       m_Image: {fileID: 0}
-    - m_Text: Britan
+    - m_Text: Russia
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2481,8 +2479,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C \u0438\u0433\u0440\u0443"
   - Resum Game
+  - "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C \u0438\u0433\u0440\u0443"
   - 2
   _text: {fileID: 0}
 --- !u!1 &1002939612
@@ -2557,7 +2555,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Russia
+  m_Text: Engle
 --- !u!222 &1002939615
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2579,8 +2577,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - Russia
   - Engle
+  - Russia
   - 2
   _text: {fileID: 0}
 --- !u!1 &1017080326
@@ -2811,8 +2809,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u041D\u0430\u0447\u0430\u0442\u044C \u0438\u0433\u0440\u0443"
   - Start Game
+  - "\u041D\u0430\u0447\u0430\u0442\u044C \u0438\u0433\u0440\u0443"
   - 2
   _text: {fileID: 0}
 --- !u!1 &1054942474
@@ -2932,6 +2930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170e9987bc202b34abd558eca0940966, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _menuPanel: {fileID: 0}
   _renders: []
   _panels:
   - {fileID: 1208059358}
@@ -3109,7 +3108,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1208059359
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3279,8 +3278,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
   - Setting
+  - "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
   - 2
   _text: {fileID: 0}
 --- !u!1 &1274501531
@@ -3404,8 +3403,8 @@ RectTransform:
   m_Father: {fileID: 251157160}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3685,8 +3684,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u0410\u0432\u0442\u043E\u0440\u044B"
   - Ather
+  - "\u0410\u0432\u0442\u043E\u0440\u044B"
   - 2
   _text: {fileID: 0}
 --- !u!1 &1577636305
@@ -3946,8 +3945,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u041C\u0443\u0437\u044B\u043A\u0430"
   - Musec
+  - "\u041C\u0443\u0437\u044B\u043A\u0430"
   - 2
   _text: {fileID: 0}
 --- !u!1 &1667685727
@@ -4281,8 +4280,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u0412 \u043C\u0435\u043D\u044E"
   - In Menu
+  - "\u0412 \u043C\u0435\u043D\u044E"
   - 2
   _text: {fileID: 0}
 --- !u!1 &1940434429
@@ -4302,7 +4301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1940434430
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4457,8 +4456,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textRender:
-  - "\u041C\u044B \u0432\u0441\u0435 \u043C\u043E\u043B\u043E\u0434\u0446\u044B"
   - We Very Goodmens
+  - "\u041C\u044B \u0432\u0441\u0435 \u043C\u043E\u043B\u043E\u0434\u0446\u044B"
   - 2
   _text: {fileID: 0}
 --- !u!1 &2102416152
