@@ -1,7 +1,15 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System;
+using System.Collections;
 
 public class PuckDown : MonoBehaviour
 {
+    [SerializeField] private Animation _animPanel;
+
+    [SerializeField] private int idScene;
+
+    [SerializeField] private float _timer;
     [SerializeField] private float _distancy;
 
     [SerializeField] private LayerMask _layreObject;
@@ -19,7 +27,22 @@ public class PuckDown : MonoBehaviour
             var s = hit.collider;
 
             if (_inventary.PuckDown(s.GetComponent<Item>().id))
+            {
                 s.GetComponent<RenderMathin>().SetNewMathin();
+                StartCoroutine(SceneRender());
+            }
         }
+    }
+
+    private IEnumerator SceneRender()
+    {
+        yield return new WaitForSeconds(_timer/4);
+        OpenCloseGame.isGameMode = false;
+        _animPanel.gameObject.SetActive(true);
+        _animPanel.Play();
+        yield return new WaitForSeconds(_timer);
+
+        SceneManager.LoadScene(idScene);
+        OpenCloseGame.isGameMode = true;
     }
 }

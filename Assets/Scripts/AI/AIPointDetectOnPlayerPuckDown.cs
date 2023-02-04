@@ -14,9 +14,10 @@ public class AIPointDetectOnPlayerPuckDown : MonoBehaviour
 
     private void Detect(Vector3 point)
     {
-        if (Vector3.Distance(transform.position, point) <= _distancyDetectNewPoint && Physics.Raycast(transform.position, point, out RaycastHit hit) && hit.collider == null)
+        if (Vector3.Distance(transform.position, point) <= _distancyDetectNewPoint)
         {
-            _moveAI.AddDestinationInterrupt(DestinationPoint.AddNew(point, animMode: 1, stopDist: 1, name: "Suspicious", duration: 7));
+            Debug.Log(111);
+            _moveAI.AddDestinationInterrupt(DestinationPoint.AddNew(point));
         }
     }
 }
