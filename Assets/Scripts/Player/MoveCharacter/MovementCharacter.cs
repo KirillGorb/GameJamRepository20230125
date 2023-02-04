@@ -43,8 +43,9 @@ public class MovementCharacter : MonoBehaviour
         {
             _characterController.height = 1;
             _characterController.center = new Vector3(0, 0.5f, 0);
+            _characterController.Move(new Vector3(0, -1, 0));
         }
-        else if(Input.GetKeyUp(KeyCode.LeftControl))
+        else if (Input.GetKeyUp(KeyCode.LeftControl))
         {
             _characterController.height = 2;
             _characterController.center = new Vector3(0, 0, 0);
