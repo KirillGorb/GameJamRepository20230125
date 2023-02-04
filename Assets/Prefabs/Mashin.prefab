@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5feebf4b35e5f1143aab685669da77b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
+  id: 1
 --- !u!114 &2902391559395065029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,8 +75,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e71add90721014f808d90d531aac79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startMathin: {fileID: 0}
-  _newMathin: {fileID: 0}
+  _startMathin: {fileID: 208884322175561473}
+  _newMathin: {fileID: 2033184423101111554}
 --- !u!114 &1437336735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,9 +97,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8235624416490543612}
     m_Modifications:
+    - target: {fileID: 807955743220202888, guid: 46659bd596597e04b933ff27e3a3b1cf, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 807955743220202888, guid: 46659bd596597e04b933ff27e3a3b1cf, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1908208207424290968, guid: 46659bd596597e04b933ff27e3a3b1cf, type: 3}
+      propertyPath: m_text
+      value: --:--
+      objectReference: {fileID: 0}
     - target: {fileID: 2848081982867731596, guid: 46659bd596597e04b933ff27e3a3b1cf, type: 3}
       propertyPath: m_Name
       value: AlarmClockDead
+      objectReference: {fileID: 0}
+    - target: {fileID: 2848081982867731596, guid: 46659bd596597e04b933ff27e3a3b1cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5536618810610767511, guid: 46659bd596597e04b933ff27e3a3b1cf, type: 3}
       propertyPath: m_RootOrder
@@ -159,6 +175,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46659bd596597e04b933ff27e3a3b1cf, type: 3}
+--- !u!1 &208884322175561473 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2848081982867731596, guid: 46659bd596597e04b933ff27e3a3b1cf, type: 3}
+  m_PrefabInstance: {fileID: 2693276093689453453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7617404665429888282 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5536618810610767511, guid: 46659bd596597e04b933ff27e3a3b1cf, type: 3}
@@ -174,6 +195,10 @@ PrefabInstance:
     - target: {fileID: 2848081982867731596, guid: 7edcfeaddaf1d6243bdd4eeaa229da01, type: 3}
       propertyPath: m_Name
       value: AlarmClockLife
+      objectReference: {fileID: 0}
+    - target: {fileID: 2848081982867731596, guid: 7edcfeaddaf1d6243bdd4eeaa229da01, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5536618810610767511, guid: 7edcfeaddaf1d6243bdd4eeaa229da01, type: 3}
       propertyPath: m_RootOrder
@@ -237,6 +262,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7edcfeaddaf1d6243bdd4eeaa229da01, type: 3}
+--- !u!1 &2033184423101111554 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2848081982867731596, guid: 7edcfeaddaf1d6243bdd4eeaa229da01, type: 3}
+  m_PrefabInstance: {fileID: 4301281845599398286}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8603912090399981337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5536618810610767511, guid: 7edcfeaddaf1d6243bdd4eeaa229da01, type: 3}
