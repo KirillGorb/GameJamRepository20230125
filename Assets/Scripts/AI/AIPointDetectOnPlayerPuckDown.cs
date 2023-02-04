@@ -17,7 +17,7 @@ public class AIPointDetectOnPlayerPuckDown : MonoBehaviour
         if (Vector3.Distance(transform.position, point) <= _distancyDetectNewPoint)
         {
             Debug.Log(111);
-            _moveAI.AddDestinationInterrupt(DestinationPoint.AddNew(point));
+            _moveAI.AddDestinationInterrupt(DestinationPoint.AddNew(point, animMode: 1, stopDist: 2, name: "Suspicious", duration: 7));
         }
     }
 }
