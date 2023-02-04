@@ -8,6 +8,7 @@ public class AIPointDetectOnPlayerPuckDown : MonoBehaviour
 
     private void Start()
     {
+        _moveAI = GetComponent<MoveAI>();
         PuckUpObject.AIPointCreate += Detect;
     }
 
@@ -15,7 +16,7 @@ public class AIPointDetectOnPlayerPuckDown : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, point) <= _distancyDetectNewPoint && Physics.Raycast(transform.position, point, out RaycastHit hit) && hit.collider == null)
         {
-            _moveAI.AddDestinationInterrupt(DestinationPoint.AddNew(point, animMode:1, stopDist:1, name:"Suspicious", duration:7));
+            _moveAI.AddDestinationInterrupt(DestinationPoint.AddNew(point, animMode: 1, stopDist: 1, name: "Suspicious", duration: 7));
         }
     }
 }
