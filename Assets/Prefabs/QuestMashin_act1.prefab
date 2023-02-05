@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2902391559395065029}
   - component: {fileID: 1437336735}
   m_Layer: 7
-  m_Name: Mashin
+  m_Name: QuestMashin_act1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
