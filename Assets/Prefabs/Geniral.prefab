@@ -154,10 +154,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1438208487377403896}
     m_Modifications:
-    - target: {fileID: 268067793327477657, guid: f0a3de2af680e04428d97ceb7cf00354, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 268067793327477660, guid: f0a3de2af680e04428d97ceb7cf00354, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -245,6 +241,18 @@ PrefabInstance:
     - target: {fileID: 268067793327477661, guid: f0a3de2af680e04428d97ceb7cf00354, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8786347897959468470, guid: f0a3de2af680e04428d97ceb7cf00354, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8786347897959468470, guid: f0a3de2af680e04428d97ceb7cf00354, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8786347897959468470, guid: f0a3de2af680e04428d97ceb7cf00354, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0a3de2af680e04428d97ceb7cf00354, type: 3}
