@@ -7546,7 +7546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5926281141638539367, guid: 1aca269a2cd4e42439ab0b6e92ef14f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.6186
+      value: 16.459
       objectReference: {fileID: 0}
     - target: {fileID: 5926281141638539367, guid: 1aca269a2cd4e42439ab0b6e92ef14f8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7554,23 +7554,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5926281141638539367, guid: 1aca269a2cd4e42439ab0b6e92ef14f8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.8326
+      value: 10.046
       objectReference: {fileID: 0}
     - target: {fileID: 5926281141638539367, guid: 1aca269a2cd4e42439ab0b6e92ef14f8, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.70459074
+      value: 0.674033
       objectReference: {fileID: 0}
     - target: {fileID: 5926281141638539367, guid: 1aca269a2cd4e42439ab0b6e92ef14f8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.20671333
       objectReference: {fileID: 0}
     - target: {fileID: 5926281141638539367, guid: 1aca269a2cd4e42439ab0b6e92ef14f8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.20525008
       objectReference: {fileID: 0}
     - target: {fileID: 5926281141638539367, guid: 1aca269a2cd4e42439ab0b6e92ef14f8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.7096139
+      value: 0.6788384
       objectReference: {fileID: 0}
     - target: {fileID: 5926281141638539367, guid: 1aca269a2cd4e42439ab0b6e92ef14f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7578,7 +7578,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5926281141638539367, guid: 1aca269a2cd4e42439ab0b6e92ef14f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -33.872
       objectReference: {fileID: 0}
     - target: {fileID: 5926281141638539367, guid: 1aca269a2cd4e42439ab0b6e92ef14f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -7602,8 +7602,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.11934911, y: 0.35061747, z: 0.30905342}
-  m_Center: {x: -0.008085156, y: 0.0016217083, z: 0.01859188}
+  m_Size: {x: 0.11934911, y: 0.08751252, z: 0.14696234}
+  m_Center: {x: -0.008085206, y: 0.1331751, z: 0.13044094}
 --- !u!114 &1037667285
 MonoBehaviour:
   m_ObjectHideFlags: 0
