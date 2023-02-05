@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\AI\NoiseTest.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\DialogSystemScripts\ChangerTextDialog.cs" />
     <Compile Include="Assets\Scripts\AI\TriggerFinalAIAI.cs" />
+    <Compile Include="Assets\Scripts\MathinRender\ObjectDown.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
