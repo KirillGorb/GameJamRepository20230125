@@ -36,7 +36,13 @@ public class MenuController : MonoBehaviour
     {
         Cursor.lockState = isStop ? CursorLockMode.None : CursorLockMode.Locked;
         Cursor.visible = isStop;
-        _menuPanel.SetActive(isStop);
+
+        if (isStop)
+            _menuPanel.SetActive(isStop);
+        else
+            foreach (var item in _panels)
+                item.SetActive(isStop);
+
         OpenCloseGame.isGameMode = !isStop;
     }
 
