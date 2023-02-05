@@ -9527,6 +9527,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89642a75c1d86944ba1ae809ee7c2f5f, type: 3}
+--- !u!111 &1459402489 stripped
+Animation:
+  m_CorrespondingSourceObject: {fileID: 1174829013431369936, guid: 89642a75c1d86944ba1ae809ee7c2f5f, type: 3}
+  m_PrefabInstance: {fileID: 1459402488}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1487962954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10978,6 +10983,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 330036654}
     - target: {fileID: 4146539317374124427, guid: 39b9ae12855e6b6469fe5a7f429d3741, type: 3}
+      propertyPath: idScene
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4146539317374124427, guid: 39b9ae12855e6b6469fe5a7f429d3741, type: 3}
       propertyPath: _animPanel
       value: 
       objectReference: {fileID: 0}
@@ -10985,6 +10994,10 @@ PrefabInstance:
       propertyPath: _inventary
       value: 
       objectReference: {fileID: 330036654}
+    - target: {fileID: 4146539317374124427, guid: 39b9ae12855e6b6469fe5a7f429d3741, type: 3}
+      propertyPath: _animPanel.Array.data[0]
+      value: 
+      objectReference: {fileID: 1459402489}
     - target: {fileID: 4146539317374124428, guid: 39b9ae12855e6b6469fe5a7f429d3741, type: 3}
       propertyPath: _textImage
       value: 

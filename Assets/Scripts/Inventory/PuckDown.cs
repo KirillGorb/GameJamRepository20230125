@@ -5,7 +5,7 @@ using System.Collections;
 
 public class PuckDown : MonoBehaviour
 {
-    [SerializeField] private Animation _animPanel;
+    [SerializeField] private Animation[] _animPanel;
 
     [SerializeField] private int idScene;
 
@@ -34,12 +34,18 @@ public class PuckDown : MonoBehaviour
         }
     }
 
-    private IEnumerator SceneRender()
+    public IEnumerator SceneRender()
     {
-        yield return new WaitForSeconds(_timer/4);
+        yield return new WaitForSeconds(_timer / 4);
         OpenCloseGame.isGameMode = false;
-        _animPanel.gameObject.SetActive(true);
-        _animPanel.Play();
+
+        foreach (var item in _animPanel)
+        {
+            item.gameObject.SetActive(true);
+            item.Play();
+            yield return new WaitForSeconds(_timer);
+        }
+
         yield return new WaitForSeconds(_timer);
 
         SceneManager.LoadScene(idScene);
