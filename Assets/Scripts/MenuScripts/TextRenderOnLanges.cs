@@ -6,7 +6,7 @@ public class TextRenderOnLanges : MonoBehaviour
 {
     [SerializeField] private string[] _textRender = new string[3];
 
-    [SerializeField] private Text _text;
+    private Text _text;
 
     private void Awake()
     {
